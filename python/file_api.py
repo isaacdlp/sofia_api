@@ -10,7 +10,7 @@ sid = 'mySID'
 
 print('Sofia File API Sample Code')
 
-files = {"xls": open('../Sofia_Metrics_Template.xlsx', "rb")}
+files = {"xls": open('../Sofia_Metrics_Template.xlsx', 'rb')}
 data = {
 	"sid": sid,
 	"all_dates": True
