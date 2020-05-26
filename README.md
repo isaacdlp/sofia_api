@@ -123,13 +123,13 @@ The JSON part must comply with the following format:
 
 ```js
 {
-	// sid part (optional)
+	// sid part (string, optional)
 	'sid': sid,
 	// metrics part
 	'metrics': {
-		// date
+		// date (date as string)
 		'2020.01.01': {
-			// metric id: metric value
+			// metric id (int as string): metric value (float)
 			'10': 3.605422555523507e-05,
 			'11': 35.7,
 			'12': 0.04579250190473688
