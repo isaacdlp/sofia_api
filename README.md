@@ -54,9 +54,9 @@ For instance:
 2020.05.12
 ```
 
-All the above are valid dates, and they all refer to **May 2020**, referred as "the Metrics for May" and stored internally as "2020.05.01" because that is how the terms are used in common language, even though the metric would strictly correspond to a measure performed by the end of May or beginning of June.
+All the above are valid dates, and they all refer to **May 2020**, discussed as "the Metrics for May" and stored internally as "2020.05.01" because that is how the terms are used in common language, even though the metric would strictly correspond to a measure performed by the end of May or beginning of June.
 
-Dates in Excel spreadsheets are extracted as objects regardless of their visible format and thus don't require any special preparation.
+Dates in Excel are extracted as objects regardless of their visible format and thus don't require any special preparation.
 
 ## File Upload API
 
