@@ -14,7 +14,7 @@ The Sofia ID (**SID**) is unique token that identifies your company and allows y
 
 A Sofia ID typically looks like this:
 
-```js
+```
 0nl2l0x06HGV9Jog6cAbkg
 ```
 
@@ -24,19 +24,19 @@ You must include your SID on each server request, in **at least one** of three p
 
 * In the url path:
 
-```js
+```
 http://sofia.conexo.vc/api/0nl2l0x06HGV9Jog6cAbkg
 ```
 
 * In the url query string:
 
-```js
+```
 http://sofia.conexo.vc/api?sid=0nl2l0x06HGV9Jog6cAbkg
 ```
 
 * In the data fields of the POST payload:
 
-```js
+```
 sid: 0nl2l0x06HGV9Jog6cAbkg
 ```
 
@@ -66,7 +66,7 @@ This is the best option if you already use a different system for tracking your 
 
 ### Endpoint
 
-```js
+```
 http://sofia.conexo.vc/xls
 ```
 
@@ -76,7 +76,7 @@ Perform a multi-part HTTP POST submission with the Excel file as the binary body
 
 Optionally, you can add the **all_dates** parameter in the data fields to extract metrics from all dates found in the spreadsheet. Otherwise, metrics are extracted **only for the most recent date found**.
 
-```js
+```
 all_dates: true
 ```
 
@@ -111,7 +111,7 @@ This is the best option if you actively use the Sofia Excel Template for follow-
 
 ### Endpoint
 
-```js
+```
 http://sofia.conexo.vc/api
 ```
 
