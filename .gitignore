@@ -17,7 +17,6 @@ dist/
 downloads/
 eggs/
 .eggs/
-java/jars/
 lib64/
 parts/
 sdist/
