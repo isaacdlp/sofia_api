@@ -70,7 +70,7 @@ This is the best option if you already use a different system for tracking your 
 http://sofia.conexo.vc/xls
 ```
 
-### Method
+### Request
 
 Perform a multi-part HTTP POST submission with the Excel file as the binary body of the request.
 
@@ -79,6 +79,21 @@ Optionally, you can add the **all_dates** parameter in the data fields to extrac
 ```
 all_dates: true
 ```
+
+### Response
+
+You will receive a [standard HTTP response status code](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) depending on the results of your action.
+
+* Success (**200**): Successfully extracted at least one metric from the request.
+* Error (**400**): There was an error processing the request. Typically:
+    * The payload could not be found.
+    * The payload could not be interpreted properly.
+    * The payload was empty (zero metrics).
+* Forbidden (**403**): Access denied. Typically:
+    * The SID is missing.
+    * The SID is invalid. 
+
+The body of the response contains an additional **plain text message** providing more details on the status code.
 
 ### Python Example
 
@@ -115,7 +130,7 @@ This is the best option if you actively use the Sofia Excel Template for follow-
 http://sofia.conexo.vc/api
 ```
 
-### Method
+### Request
 
 Perform a HTTP POST submission with the metrics as part its a JSON-encoded payload.
 
@@ -139,6 +154,21 @@ The JSON part must comply with the following format:
 ```
 
 There is no **all_dates** parameter. All the dates and metrics that you submit will be considered.
+
+### Response
+
+You will receive a [standard HTTP response status code](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) depending on the results of your action.
+
+* Success (**200**): Successfully extracted at least one metric from the request.
+* Error (**400**): There was an error processing the request. Typically:
+    * The payload could not be found.
+    * The payload could not be interpreted properly.
+    * The payload was empty (zero metrics).
+* Forbidden (**403**): Access denied. Typically:
+    * The SID is missing.
+    * The SID is invalid. 
+
+The body of the response contains an additional **plain text message** providing more details on the status code.
 
 ### Python Example
 
