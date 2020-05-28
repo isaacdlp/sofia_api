@@ -60,9 +60,9 @@ Dates in Excel are extracted as objects regardless of their visible format and t
 
 ## File Upload API
 
-Use this API to submit to Sofia only the relevant data fields corresponding to your metrics.
+Use this API to submit your entire Excel sheet to Sofia, as you would if using the standard [Metrics Web UI](http://sofia.conexo.vc/metrics).
 
-This is the best option if you already use a different system for tracking your progress and just want to quickly automate the integration with Sofia.
+This is the best option if you actively use the Sofia Excel Template for follow-up your progress but want to automate the delivery step.
 
 ### Endpoint
 
@@ -120,9 +120,9 @@ print(res.content)
 
 ## Data Upload API
 
-Use this API to submit your entire Excel sheet to Sofia, as you would if using the standard [Metrics Web UI](http://sofia.conexo.vc/metrics).
+Use this API to submit to Sofia only the relevant data fields corresponding to your metrics.
 
-This is the best option if you actively use the Sofia Excel Template for follow-up your progress but want to automate the delivery step.
+This is the best option if you already use a different system for tracking your progress and just want to quickly automate the integration with Sofia.
 
 ### Endpoint
 
